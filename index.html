@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency Page</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="' stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css" />
+    <script>
+      if (localStorage.getItem("signedUp") !== "yes") {
+        window.location.href = "sign-up%20page/signup.html";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section contain">
+        <nav>
+          <div class="logo contain">
+            <div class="logo-img">
+              <!-- <img src="./images/2ecf7364cd78b7222311518159a72179.jpg" alt="Travel-logo" /> -->
+              <h1><span>TRA</span>VEL</h1>
+            </div>
+            <ul>
+              <li>Services</li>
+              <li>Tours</li>
+              <li>Offers</li>
+              <li>About</li>
+            </ul>
+          </div>
+
+          <button class="cssbuttons-io-button contain">
+            Book Now
+            <div class="icon">
+              <svg
+                height="24"
+                width="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+          </button>
+        </nav>
+        <div class="large-img">
+          <img src="./slider-img/flight-zgveis6o1hmvkhcy.jpg" alt="" />
+          <img src="./slider-img/0_vlMlulsllPbpdOsb.jpg" alt="" />\
+          <img src="./slider-img/4K-Travel-Wallpaper-for-Desktop.jpg" alt="" />
+          <img
+            src="./slider-img/4K-Travel-Wallpaper-HD-Free-download.jpg"
+            alt=""
+          />
+          <img src="./slider-img/mood-sunset-3840x2160-10949.jpg" alt="" />
+          <img src="./slider-img/sunset-scenery-3840x2160-13264.jpg" alt="" />
+          <img src="./slider-img/photo-1605274280779-a4732e176f4b.jpg" alt="" />
+          <img
+            src="./slider-img/doha-skyline-qatar-cityscape-city-lights-night-time-light-3840x2160-4169.jpg"
+            alt=""
+          />
+          <img
+            src="./slider-img/journey-unfolds-as-a-traveler-yellow-backpacked-embraces-mountain-beauty-ai-generated-photo.jpg"
+            alt=""
+          />
+        </div>
+        <div class="head">
+          <div class="info">
+            <h1>Explore the Wonders of the world</h1>
+            <p>
+              Discover breathtaking destinations, unique experiences, and
+              unforgettable adventures. Join us on a journey to explore the
+              world's wonders.
+            </p>
+          </div>
+          <div class="info2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for city" />
+            <button>Find Others</button>
+          </div>
+        </div>
+        <div class="like">
+          <div class="outer contain">
+            <div class="dot"></div>
+            <div class="card4">
+              <div class="ray"></div>
+              <div class="text">100K</div>
+              <div>Offers</div>
+            </div>
+          </div>
+          <div class="outer contain">
+            <div class="dot"></div>
+            <div class="card4">
+              <div class="ray"></div>
+              <div class="text">300K</div>
+              <div>Customers</div>
+            </div>
+          </div>
+          <div class="outer contain">
+            <div class="dot"></div>
+            <div class="card4">
+              <div class="ray"></div>
+              <div class="text">25K</div>
+              <div>Destinations</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="book">
+        <div class="back-btn">
+          <button alt="BACK" class="tony">
+            <i>B</i>
+            <i>A</i>
+            <i>C</i>
+            <i>K</i>
+          </button>
+        </div>
+        <div class="book-form">
+          <div class="book-info">
+            <h1>🌴Book Your Trip🌴</h1>
+            <p>
+              Amazing stuff waiting for you and your frinds / family! you're
+              just one step away from a new adventures.
+            </p>
+            <form>
+              <div class="date-set">
+                <div class="part-date">
+                  <label>CHECK-IN</label>
+                  <div class="part-date1">
+                    <input type="date" id="" />
+                  </div>
+                </div>
+                <div class="part-date">
+                  <label>CHECK-OUT</label>
+                  <div class="part-date1">
+                    <input type="date" id="" />
+                  </div>
+                </div>
+              </div>
+              <div class="part-text">
+                <label>NAME</label>
+                <div class="part-text1">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="" />
+                </div>
+              </div>
+              <div class="part-text">
+                <label>EMAIL</label>
+                <div class="part-text1">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="email" id="" />
+                </div>
+              </div>
+              <div class="part-text">
+                <label>PASSWORD</label>
+                <div class="part-text1">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="password" id="" />
+                </div>
+              </div>
+              <div class="part-check">
+                <h4>BOOKING FOR</h4>
+                <div class="part-check-2">
+                  <div class="part-check1">
+                    <input type="checkbox" />
+                    <h4>Leasure</h4>
+                  </div>
+                  <div class="part-check1">
+                    <input type="checkbox" />
+                    <h4>Business</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="part-counter">
+                <div class="part-count">
+                  <h5>ADULT</h5>
+                  <div class="count">
+                    <button class="minus">-</button>
+                    <p>0</p>
+                    <button class="add">+</button>
+                  </div>
+                </div>
+                <div class="part-count">
+                  <h5>CHILDERN</h5>
+                  <div class="count">
+                    <button class="minus">-</button>
+                    <p>0</p>
+                    <button class="add">+</button>
+                  </div>
+                </div>
+                <div class="part-count">
+                  <h5>NO OF SEAT</h5>
+                  <div class="count">
+                    <button class="minus">-</button>
+                    <p>0</p>
+                    <button class="add">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="sub-btn">
+                <button type="submit" class="submit-info">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="book-img">
+            <img
+              src="./images/beautiful-beach-free-image-after-sunset-sky-free-photo.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="fly">
+        <h1>Featured Destination</h1>
+      </div>
+      <div
+        class="slider contain"
+        style="--width: 350px; --height: 480px; --quantity: 9"
+      >
+        <div class="list">
+          <div class="item" style="--position: 1">
+            <div class="card">
+              <div class="magic-head">
+                <div class="magic-img">
+                  <img
+                    src="./card/glacier-point-yosemite-valley-national-park-colorful-3840x2160-6412 (1).jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="magic-info">
+                  <h2>🌄 Mountain Adventures</h2>
+                  <p>
+                    Escape to the mountains for fresh air, stunning views, and
+                    peaceful moments. Perfect for hiking, exploring nature, or
+                    simply relaxing above the clouds.
+                  </p>
+                  <div class="magic-space">
+                    <h3>$320</h3>
+                    <p>12 Days Trip</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" style="--position: 2">
+            <div class="card">
+              <div class="magic-head">
+                <div class="magic-img">
+                  <img
+                    src="./card/ocean-waves-palm-3840x2160-12952.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="magic-info">
+                  <h2>🌊 Wave Wonders</h2>
+                  <p>
+                    Feel the rhythm of the ocean with destinations where waves
+                    dance under the sun. Ideal for surfers, beach lovers, and
+                    anyone seeking seaside serenity.
+                  </p>
+                  <div class="magic-space">
+                    <h3>$390</h3>
+                    <p>10 Days Trip</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" style="--position: 3">
+            <div class="card">
+              <div class="magic-head">
+                <div class="magic-img">
+                  <img
+                    src="./card/kelingking-beach-3840x2160-12252.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="magic-info">
+                  <h2>🏖️ Beach Bliss</h2>
+                  <p>
+                    Soak up the sun on golden sands, swim in crystal-clear
+                    waters, and unwind to the sound of gentle waves. Your
+                    perfect beach escape awaits.
+                  </p>
+                  <div class="magic-space">
+                    <h3>$390</h3>
+                    <p>10 Days Trip</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" style="--position: 4">
+            <div class="card">
+              <div class="magic-head">
+                <div class="magic-img">
+                  <img
+                    src="./card/dubai-sheikh-zayed-3840x2160-21154.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="magic-info">
+                  <h2>🏙️ City Escapes</h2>
+                  <p>
+                    Dive into the heartbeat of vibrant cities—where culture,
+                    cuisine, and skyline adventures await. Perfect for explorers
+                    craving energy, excitement, and endless discovery.
+                  </p>
+                  <div class="magic-space">
+                    <h3>$390</h3>
+                    <p>10 Days Trip</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" style="--position: 5">
+            <div class="card">
+              <div class="magic-head">
+                <div class="magic-img">
+                  <img
+                    src="./card/eiffel-tower-night-paris-france-reflection-river-thames-3840x2160-8437.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="magic-info">
+                  <h2>🗼 Eiffel Tower Views</h2>
+                  <p>
+                    Experience the magic of Paris with a visit to the iconic
+                    Eiffel Tower. From romantic evenings to stunning city views,
+                    it’s a must-see landmark that captures the heart of France.
+                  </p>
+                  <div class="magic-space">
+                    <h3>$390</h3>
+                    <p>10 Days Trip</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" style="--position: 6">
+            <div class="card">
+              <div class="magic-head">
+                <div class="magic-img">
+                  <img
+                    src="./card/wooden-stairs-forest-jungle-green-trees-sunlight-wooden-3840x2160-2412.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="magic-info">
+                  <h2>🌴 Jungle Adventures</h2>
+                  <p>
+                    Step into the wild and explore lush jungles teeming with
+                    life. From hidden waterfalls to thrilling treks, it’s the
+                    perfect getaway for nature lovers and adventurers.
+                  </p>
+                  <div class="magic-space">
+                    <h3>$390</h3>
+                    <p>10 Days Trip</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" style="--position: 7">
+            <div class="card">
+              <div class="magic-head">
+                <div class="magic-img">
+                  <img
+                    src="./card/london-bridge-united-kingdom-river-thames-night-time-3840x2160-3316 (1).jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="magic-info">
+                  <h2>🌉 London Bridge Landmark</h2>
+                  <p>
+                    Discover the charm of London with a walk across the historic
+                    London Bridge. Surrounded by rich history and modern vibes,
+                    it’s a must-see icon in the heart of the city.
+                  </p>
+                  <div class="magic-space">
+                    <h3>$390</h3>
+                    <p>10 Days Trip</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" style="--position: 8">
+            <div class="card">
+              <div class="magic-head">
+                <div class="magic-img">
+                  <img
+                    src="./card/great-wall-of-china-sunset-orange-sky-mountains-beijing-3840x2160-2134.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="magic-info">
+                  <h2>🏯 Great Wall Wonders</h2>
+                  <p>
+                    Walk along one of the world’s greatest wonders. The Great
+                    Wall of China offers breathtaking views, rich history, and
+                    an unforgettable journey through ancient landscapes.
+                  </p>
+                  <div class="magic-space">
+                    <h3>$390</h3>
+                    <p>10 Days Trip</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" style="--position: 9">
+            <div class="card">
+              <div class="magic-head">
+                <div class="magic-img">
+                  <img
+                    src="./card/egyptian-pyramids-3840x2160-17847.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="magic-info">
+                  <h2>🏜️ Mysteries of the Pyramids</h2>
+                  <p>
+                    Uncover the ancient secrets of the Egyptian Pyramids. These
+                    timeless wonders offer a glimpse into the past and a journey
+                    through the heart of history.
+                  </p>
+                  <div class="magic-space">
+                    <h3>$390</h3>
+                    <p>10 Days Trip</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slect">
+        <div class="slect-img contain">
+          <img src="./info-img/chicago-downtown-3840x2160-21348.jpg" alt="" />
+          <img
+            src="./info-img/cologne-cathedral-3840x2160-13552.jpg"
+            alt=""
+          /><img
+            src="./info-img/flying-whales-3840x2160-14449.jpg"
+            alt=""
+          /><img
+            src="./info-img/frankfurt-night-3840x2160-12641 (1).jpg"
+            alt=""
+          /><img
+            src="./info-img/frankfurt-night-3840x2160-12641.jpg"
+            alt=""
+          /><img
+            src="./info-img/new-york-city-night-3840x2160-12997.jpg"
+            alt=""
+          /><img
+            src="./info-img/san-francisco-3840x2160-14488.jpg"
+            alt=""
+          /><img
+            src="./info-img/shanghai-city-3840x2160-16563.jpg"
+            alt=""
+          /><img
+            src="./info-img/skyline-chicago-3840x2160-11209.jpg"
+            alt=""
+          /><img
+            src="./info-img/speicherstadt-3840x2160-13057.jpg"
+            alt=""
+          /><img src="./info-img/toledo-spain-3840x2160-19840.jpg" alt="" /><img
+            src="./info-img/vice-city-cityscape-3840x2160-22326.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slect-option">
+          <h1>Plan and reserve in <under>second</under></h1>
+          <div class="option">
+            <div class="opt-cont contain">
+              <div class="opt-i">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="opt-info">
+                <h3>Find Your Destination</h3>
+                <p>Begin your next great adventure</p>
+                <p>Uncover unforgettable experiences waiting just for you</p>
+              </div>
+            </div>
+            <div class="opt-cont contain">
+              <div class="opt-i">
+                <i class="fa-solid fa-file"></i>
+              </div>
+              <div class="opt-info">
+                <h3>Select an offer</h3>
+                <p>Choose the perfect deal for your journey.</p>
+                <p>
+                  Select an offer designed to bring you closer to your dream
+                  destination without breaking your budget
+                </p>
+              </div>
+            </div>
+            <div class="opt-cont contain">
+              <div class="opt-i">
+                <i class="fas fa-book"></i>
+              </div>
+              <div class="opt-info">
+                <h3>Book your trip</h3>
+                <p>Secure your journey in just a few clicks.</p>
+                <p>
+                  Book your trip today and turn your travel dreams into an
+                  unforgettable reality.
+                </p>
+              </div>
+            </div>
+            <div class="opt-cont contain">
+              <div class="opt-i">
+                <i class="fa-solid fa-mountain"></i>
+              </div>
+              <div class="opt-info">
+                <h3>Enjoy your adventure</h3>
+                <p>Create memories that last a lifetime</p>
+                <p>
+                  Enjoy your adventures as you explore new places, embrace new
+                  cultures, and discover the beauty of the world around you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="final contain">
+        <h1>Subscribe to recieve special offers</h1>
+        <div class="fin-eml">
+          <input type="text" placeholder="Email Address" />
+
+          <button class="hrt">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+              ></path>
+            </svg>
+
+            <div class="text">Subscribe</div>
+          </button>
+        </div>
+        <p>
+          Your next journey starts here. Subscribe for free travel inspiration.
+        </p>
+      </div>
+
+      <footer class="footer contain">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <h2>Alex Travels</h2>
+            <p>
+              Discover amazing destinations, plan your trips with ease, and
+              enjoy unforgettable adventures around the world.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>About</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Live Chat</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Privacy</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Alex Travels. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

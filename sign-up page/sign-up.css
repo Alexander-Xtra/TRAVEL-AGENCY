@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: url(./2471303.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.form-gen {
+  background: rgba(255, 255, 255, 0.042);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  width: 400px;
+  animation: fadeIn 0.9s ease-in-out;
+  border: 2px solid rgba(255, 255, 255, 0.422);
+}
+.form .title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #f1f1f1;
+}
+
+.form .message {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ccc;
+}
+.form label {
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form .input {
+  width: 90%;
+  padding: 14px 12px;
+  border: 1.2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+.form .input:focus {
+  outline: none;
+  border-color: #00c6ff;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 8px rgba(0, 198, 255, 0.4);
+}
+.form label span {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #aaa;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.form .input:focus + span,
+.form .input:valid + span {
+  top: -6px;
+  left: 10px;
+  font-size: 12px;
+  color: #00c6ff;
+  background: #1a1a1a;
+  padding: 0 6px;
+  border-radius: 4px;
+}
+.flex {
+  display: flex;
+  gap: 16px; /* spacing between inputs */
+  margin-bottom: 1rem;
+}
+
+.flex label {
+  flex: 1; /* make both equal width */
+}
+.flex .input {
+  width: 80%; /* make inputs take full width of their container */
+}
+.submit {
+  width: 95%;
+  padding: 14px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit:hover {
+  background: linear-gradient(135deg, #0072ff, #0044cc);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 198, 255, 0.3);
+}
+.signin {
+  margin-top: 18px;
+  font-size: 14px;
+  text-align: center;
+  color: #f6f5f5;
+}
+
+.signin a {
+  color: #00c6ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.signin a:hover {
+  color: #0072ff;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
