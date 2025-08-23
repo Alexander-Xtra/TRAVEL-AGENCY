@@ -8,7 +8,8 @@ const book = document.querySelector(".book");
 const cssBtn = document.querySelector(".cssbuttons-io-button");
 const back = document.querySelector(".tony");
 const selectImg = document.querySelectorAll(".slect-img img");
-console.log(selectImg);
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".logo ul");
 
 let selectCurrent = 0;
 const selectImgCount = selectImg.length;
@@ -104,6 +105,53 @@ window.addEventListener("DOMContentLoaded", () => {
   if (signedUp === "yes" && firstname) {
     alert("Welcome, " + firstname + "! 🎉");
   }
+});
+
+if (hamburger && navLinks) {
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    hamburger.classList.toggle("open");
+    navLinks.querySelectorAll("li").forEach((li, i) => {
+      li.style.animation = navLinks.classList.contains("active")
+        ? `navLinkFade 0.5s ease forwards ${i / 7 + 0.2}s`
+        : "";
+    });
+  });
+
+  navLinks.querySelectorAll("li").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      hamburger.classList.remove("open");
+      navLinks.querySelectorAll("li").forEach((li) => {
+        li.style.animation = "";
+      });
+    });
+  });
+}
+const form = document.querySelector("form");
+const summaryBox = document.querySelector(".booking-summary");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  document.getElementById("summary-checkin").textContent =
+    form.querySelector('input[type="date"]').value;
+  document.getElementById("summary-checkout").textContent =
+    form.querySelectorAll('input[type="date"]')[1].value;
+  document.getElementById("summary-name").textContent =
+    form.querySelector('input[type="text"]').value;
+  document.getElementById("summary-email").textContent = form.querySelector(
+    'input[type="email"]'
+  ).value;
+
+  // counters
+  const counts = form.querySelectorAll(".part-count p");
+  document.getElementById("summary-adults").textContent = counts[0].textContent;
+  document.getElementById("summary-children").textContent =
+    counts[1].textContent;
+  document.getElementById("summary-seats").textContent = counts[2].textContent;
+
+  summaryBox.classList.remove("hidden");
 });
 
 // ...existing code...

@@ -11,7 +11,7 @@ const hr = document
 
     if (!savedEmail || !savedPassword) {
       alert("You need to sign up first!");
-      window.location.href = "../sign-up page/signup.html"; // redirect to signup
+      window.location.href = "../sign-up page/signup.html"; 
       return;
     }
     if (email === savedEmail && password === savedPassword) {
@@ -20,7 +20,7 @@ const hr = document
           localStorage.getItem("firstname") +
           "!"
       );
-      window.location.href = "../index.html"; // redirect to homepage
+      window.location.href = "../index.html";
     } else {
       alert("❌ Invalid email or password. Try again.");
     }

@@ -24,7 +24,18 @@ body {
   animation: fadeIn 0.9s ease-in-out;
   border: 2px solid rgba(255, 255, 255, 0.422);
 }
-
+.logo-img {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.logo-img h1 {
+  font-size: 35px;
+  border: 1px solid purple;
+}
+.logo-img span {
+  color: purple;
+  border: none;
+}
 .form .title {
   font-size: 28px;
   font-weight: 600;

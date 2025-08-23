@@ -40,10 +40,6 @@ nav {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
-/* .logo-img img {
-  width: 100%;
-  height: 100%;
-} */
 .logo-img h1 {
   font-size: 35px;
   border-bottom: 2px solid rgb(228, 222, 228);
@@ -67,7 +63,6 @@ nav {
   padding: 5px 10px;
   transition: color 0.3s;
 }
-
 
 .logo ul li::after {
   content: "";
@@ -107,6 +102,29 @@ nav {
   transition: all 0.3s;
   opacity: 1;
   transform: translateX(0);
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -7px);
 }
 
 .cssbuttons-io-button .icon {
@@ -433,6 +451,22 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.booking-summary {
+  width:50%;
+  margin-top: 20px;
+  padding: 15px;
+  background: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.booking-summary.hidden {
+  display: none;
+}
+.booking-summary h3 {
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
 .date-set {
   width: 100%;
   height: 70px;
@@ -990,8 +1024,6 @@ nav {
   color: #ddd;
   padding: 40px 20px 20px;
   margin-top: 40px;
-  /* opacity: 0;
-  transition: all 0.9s ease-out; */
 }
 
 .footer-container {
@@ -1059,15 +1091,45 @@ nav {
 .contain.visible {
   opacity: 1;
 }
+@keyframes navLinkFade {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-/* Responsive Footer */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .logo ul {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.384);
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .logo ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
     text-align: center;

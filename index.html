@@ -19,8 +19,12 @@
         <nav>
           <div class="logo contain">
             <div class="logo-img">
-              <!-- <img src="./images/2ecf7364cd78b7222311518159a72179.jpg" alt="Travel-logo" /> -->
               <h1><span>TRA</span>VEL</h1>
+            </div>
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
             <ul>
               <li>Services</li>
@@ -111,6 +115,24 @@
         </div>
       </div>
       <div class="book">
+        <div class="booking-summary hidden">
+          <h3>📌 Your Booking Summary</h3>
+          <ul>
+            <li>
+              <strong>Check-in:</strong> <span id="summary-checkin"></span>
+            </li>
+            <li>
+              <strong>Check-out:</strong> <span id="summary-checkout"></span>
+            </li>
+            <li><strong>Name:</strong> <span id="summary-name"></span></li>
+            <li><strong>Email:</strong> <span id="summary-email"></span></li>
+            <li><strong>Adults:</strong> <span id="summary-adults"></span></li>
+            <li>
+              <strong>Children:</strong> <span id="summary-children"></span>
+            </li>
+            <li><strong>Seats:</strong> <span id="summary-seats"></span></li>
+          </ul>
+        </div>
         <div class="back-btn">
           <button alt="BACK" class="tony">
             <i>B</i>
@@ -145,21 +167,21 @@
                 <label>NAME</label>
                 <div class="part-text1">
                   <i class="fa-solid fa-user"></i>
-                  <input type="text" id="" />
+                  <input type="text" placeholder="Enter your full name" />
                 </div>
               </div>
               <div class="part-text">
                 <label>EMAIL</label>
                 <div class="part-text1">
-                  <i class="fa-solid fa-user"></i>
-                  <input type="email" id="" />
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" placeholder="Enter your email" />
                 </div>
               </div>
               <div class="part-text">
                 <label>PASSWORD</label>
                 <div class="part-text1">
-                  <i class="fa-solid fa-user"></i>
-                  <input type="password" id="" />
+                  <i class="fa-solid fa-lock"></i>
+                  <input type="password" placeholder="Create a password" />
                 </div>
               </div>
               <div class="part-check">
