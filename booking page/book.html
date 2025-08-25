@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking for a trip</title>
+    <link rel="stylesheet" href="book.css" />
+  </head>
+  <body>
+    <div class="booking-container">
+      <div class="booking-box">
+        <div class="booking-form">
+          <h1>🌴 Book Your Trip 🌴</h1>
+          <p>
+            Plan your next adventure with ease. Just fill in your details below
+            to get started!
+          </p>
+
+          <form>
+            <!-- Departure & Destination instead of Dates -->
+            <div class="form-group travel">
+              <div>
+                <label for="departure">Departure Location</label>
+                <input
+                  type="text"
+                  id="departure"
+                  placeholder="Enter departure city/airport"
+                  required
+                />
+              </div>
+              <div>
+                <label for="destination">Destination</label>
+                <input
+                  type="text"
+                  id="destination"
+                  placeholder="Enter destination city/airport"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="+234 123 456 7890"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="type">Booking For</label>
+              <select id="type" required>
+                <option value="">Select type</option>
+                <option value="leisure">Leisure</option>
+                <option value="business">Business</option>
+                <option value="honeymoon">Honeymoon</option>
+                <option value="family">Family Trip</option>
+              </select>
+            </div>
+
+            <div class="form-group guests">
+              <div>
+                <label>Adults</label>
+                <input type="number" min="1" max="10" value="1" />
+              </div>
+              <div>
+                <label>Children</label>
+                <input type="number" min="0" max="10" value="0" />
+              </div>
+              <div>
+                <label>Seats</label>
+                <input type="number" min="1" max="50" value="1" />
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="form-actions">
+              <button
+                type="button"
+                onclick="window.location.href='../index.html'"
+                class="btn-back"
+              >
+                ⬅ Back
+              </button>
+
+              <button type="submit" class="btn-submit">Confirm Booking</button>
+            </div>
+          </form>
+        </div>
+        <div class="booking-image">
+          <img
+            src="../images/beautiful-beach-free-image-after-sunset-sky-free-photo.webp"
+            alt="Beach Resort"
+          />
+        </div>
+      </div>
+
+      <!-- Popup -->
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <h2>🎉 Booking Confirmed!</h2>
+          <p id="popup-message"></p>
+          <button id="close-popup">Close</button>
+        </div>
+      </div>
+    </div>
+    <script src="book.js"></script>
+  </body>
+</html>
