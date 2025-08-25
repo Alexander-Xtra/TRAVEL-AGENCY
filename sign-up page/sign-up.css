@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background: url(../images/plane-is-shown-purple-background_1065421-47473\ \(1\).jpg);
+  background: url(../images/HD-wallpaper-beautiful-sunset-lovely-beautiful-sunset-trees-sky-clouds-lake-airplane-plane-water-peaceful-beauty-nature-reflection-pink-blue.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@ body {
   font-size: 14px;
   text-align: center;
   margin-bottom: 25px;
-  color: #ccc;
+  color: #ffffff;
 }
 .form label {
   display: block;
@@ -46,7 +46,7 @@ body {
 .form .input {
   width: 90%;
   padding: 14px 12px;
-  border: 1.2px solid rgba(255, 255, 255, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.25);
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.05);
   color: #fff;
@@ -55,9 +55,9 @@ body {
 }
 .form .input:focus {
   outline: none;
-  border-color: #00c6ff;
+  border-color: #ff00bf;
   background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 8px rgba(0, 198, 255, 0.4);
+  box-shadow: 0 0 8px rgba(255, 0, 200, 0.4);
 }
 .form label span {
   position: absolute;
@@ -65,7 +65,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   font-size: 14px;
-  color: #aaa;
+  color: white;
   transition: 0.3s;
   pointer-events: none;
 }
@@ -75,22 +75,22 @@ body {
   top: -6px;
   left: 10px;
   font-size: 12px;
-  color: #00c6ff;
-  background: #1a1a1a;
+  color: white;
+  background: black;
   padding: 0 6px;
   border-radius: 4px;
 }
 .flex {
   display: flex;
-  gap: 16px; /* spacing between inputs */
+  gap: 16px;
   margin-bottom: 1rem;
 }
 
 .flex label {
-  flex: 1; /* make both equal width */
+  flex: 1;
 }
 .flex .input {
-  width: 80%; /* make inputs take full width of their container */
+  width: 80%;
 }
 .submit {
   width: 95%;
@@ -98,7 +98,7 @@ body {
   margin-top: 12px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  background: linear-gradient(135deg, #ef7dd1, #ff00fb);
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -107,9 +107,9 @@ body {
 }
 
 .submit:hover {
-  background: linear-gradient(135deg, #0072ff, #0044cc);
+  background: linear-gradient(135deg, #ff00b7, #161616);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 198, 255, 0.3);
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.3);
 }
 .signin {
   margin-top: 18px;
@@ -119,14 +119,14 @@ body {
 }
 
 .signin a {
-  color: #00c6ff;
+  color: #ff00bf9c;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .signin a:hover {
-  color: #0072ff;
+  color: rgb(251, 23, 251);
 }
 @keyframes fadeIn {
   from {

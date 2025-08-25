@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background: url(../sign-up%20page/2471303.gif);
+  background: url(../images/HD-wallpaper-beautiful-sunset-lovely-beautiful-sunset-trees-sky-clouds-lake-airplane-plane-water-peaceful-beauty-nature-reflection-pink-blue.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@ h1 {
 p {
   font-size: 14px;
   margin-bottom: 25px;
-  color: #ccc;
+  color: #ffffff;
 }
 
 .input-group {
@@ -53,7 +53,7 @@ p {
 .input-group input {
   width: 90%;
   padding: 14px 12px;
-  border: 1.2px solid rgba(255, 255, 255, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.25);
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.05);
   color: #fff;
@@ -63,9 +63,9 @@ p {
 
 .input-group input:focus {
   outline: none;
-  border-color: #00c6ff;
+  border-color: #ff00bf;
   background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 8px rgba(0, 198, 255, 0.4);
+  box-shadow: 0 0 8px rgba(255, 0, 200, 0.4);
 }
 
 .input-group label {
@@ -74,7 +74,7 @@ p {
   top: 50%;
   transform: translateY(-50%);
   font-size: 14px;
-  color: #aaa;
+  color: #ffffff;
   pointer-events: none;
   transition: 0.3s;
 }
@@ -84,7 +84,7 @@ p {
   top: -6px;
   left: 10px;
   font-size: 12px;
-  color: #00c6ff;
+  color: white;
   background: rgba(0, 0, 0, 0.4);
   padding: 0 6px;
   border-radius: 4px;
@@ -96,14 +96,14 @@ p {
 }
 
 .options a {
-  color: #00c6ff;
+  color: #fffffff3;
   font-size: 13px;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .options a:hover {
-  color: #0072ff;
+  color: #3d0136;
 }
 
 .btn {
@@ -111,7 +111,7 @@ p {
   padding: 14px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  background: linear-gradient(135deg, #ef7dd1, #ff00fb);
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -120,9 +120,9 @@ p {
 }
 
 .btn:hover {
-  background: linear-gradient(135deg, #0072ff, #0044cc);
+  background: linear-gradient(135deg, #ff00b7, #161616);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 198, 255, 0.3);
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.3);
 }
 
 .signup-link {
@@ -132,13 +132,13 @@ p {
 }
 
 .signup-link a {
-  color: #00c6ff;
+  color: #ff00bf9c;
   text-decoration: none;
   font-weight: 500;
 }
 
 .signup-link a:hover {
-  color: #0072ff;
+  color: rgb(251, 23, 251);
 }
 
 @keyframes fadeIn {
