@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #222;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #6c2bd9;
+  color: #fff;
+}
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+  background: url("/images/plane-take-off-pastel-purple-background-plane-flying-with-clouds-3d-render_576429-60.avif")
+    center/cover no-repeat;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 48px;
+  animation: fadeInDown 1s ease;
+}
+.hero p {
+  margin: 10px 0 20px;
+  font-size: 18px;
+}
+.hero .btn {
+  background: #ffd700;
+  padding: 12px 25px;
+  color: #222;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.hero .btn:hover {
+  background: #fff;
+  color: #6c2bd9;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+.services h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #6c2bd9;
+}
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.service-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.service-card i {
+  font-size: 40px;
+  color: #6c2bd9;
+  margin-bottom: 15px;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Why Choose Us */
+.why-us {
+  background: #f4f4ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+.why-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.why-box {
+  background: #fff;
+  padding: 25px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.why-box i {
+  font-size: 35px;
+  color: #6c2bd9;
+  margin-bottom: 10px;
+}
+.why-box:hover {
+  transform: scale(1.05);
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 60px 20px;
+  text-align: center;
+}
+.test-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.test-card {
+  background: #fff;
+  padding: 25px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+}
+
+/* CTA Section */
+.cta {
+  background: #6c2bd9;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+.cta .btn {
+  margin-top: 15px;
+  display: inline-block;
+  background: #ffd700;
+  padding: 12px 25px;
+  color: #222;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+.cta .btn:hover {
+  background: #fff;
+  color: #6c2bd9;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

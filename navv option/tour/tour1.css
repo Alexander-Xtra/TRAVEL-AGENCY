@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #222;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #6c2bd9;
+  color: #fff;
+}
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Hero */
+.hero {
+  background: url("./imgs/beautiful-girl-3840x2160-17954.jpg") center/cover no-repeat;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 48px;
+  animation: fadeInDown 1s ease;
+}
+.hero p {
+  margin: 10px 0 20px;
+  font-size: 18px;
+}
+
+/* Tours Section */
+.tours {
+  padding: 60px 20px;
+  text-align: center;
+}
+.tour-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.tour-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.tour-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.tour-card h3 {
+  margin: 15px 0 10px;
+  color: #6c2bd9;
+}
+.tour-card p {
+  padding: 0 15px 15px;
+  font-size: 14px;
+}
+.tour-card button {
+  margin: 0 0 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #6c2bd9;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.tour-card:hover {
+  transform: translateY(-10px);
+}
+.tour-card button:hover {
+  background: #5420b5;
+}
+
+/* Highlights */
+.highlights {
+  background: #f4f4ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+.highlights-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.highlight {
+  background: #fff;
+  padding: 25px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.highlight i {
+  font-size: 35px;
+  color: #6c2bd9;
+  margin-bottom: 10px;
+}
+.highlight:hover {
+  transform: scale(1.05);
+}
+
+/* Gallery */
+.gallery {
+  padding: 60px 20px;
+  text-align: center;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* FAQ */
+.faq {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.faq-item {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA */
+.cta {
+  background: #6c2bd9;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+.cta .btn {
+  margin-top: 15px;
+  display: inline-block;
+  background: #ffd700;
+  padding: 12px 25px;
+  color: #222;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+.cta .btn:hover {
+  background: #fff;
+  color: #6c2bd9;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

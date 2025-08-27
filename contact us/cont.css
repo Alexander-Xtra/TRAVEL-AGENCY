@@ -1,0 +1,185 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background: #6c2bd9;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav .nav-links a:hover,
+nav .nav-links .active {
+  color: #ffd700;
+}
+
+/* Hero */
+.hero {
+  background: url("./imgs/abstract-butterfly-3840x2160-11091.png") no-repeat
+    center center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  animation: fadeIn 2s ease-in;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.contact-form-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-form-section h2 {
+  font-size: 32px;
+  color: #6c2bd9;
+  margin-bottom: 10px;
+}
+
+.contact-form-section p {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #6c2bd9;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #4b1ea8;
+}
+.contact-info {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-size: 32px;
+  color: #6c2bd9;
+  margin-bottom: 30px;
+}
+
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 220px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #6c2bd9;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+  margin-top: 40px;
+}
+.map {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.map h2 {
+  font-size: 32px;
+  color: #6c2bd9;
+  margin-bottom: 20px;
+}
+
+.map iframe {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

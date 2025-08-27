@@ -96,3 +96,19 @@ function logout() {
 
   window.location.href = "../sing-up page/signup.html";
 }
+const find = document.querySelector(".find1");
+find.addEventListener("click", () => {
+  window.location.href = "./select/find destination/find.html";
+});
+const select = document.querySelector(".selc");
+select.addEventListener("click", () => {
+  window.location.href = "./select/selcct offer/select.html";
+});
+const bbttn = document.querySelector(".booke");
+bbttn.addEventListener("click", () => {
+  window.location.href = "./select/book trip/trip.html";
+});
+const enjoy = document.querySelector(".enjoy");
+enjoy.addEventListener("click", () => { 
+  window.location.href = "./select/enjoy adventure/enjoy.html";
+});

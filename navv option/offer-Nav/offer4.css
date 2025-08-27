@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fafafa;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  background: #6c2bd9;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #fff;
+}
+
+/* Hero */
+.hero {
+  background: url("./imgs/barrika-beach-3840x2160-16568.jpg") no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+/* Offers Section */
+.offers {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.offers h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #6c2bd9;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.offer-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-10px);
+}
+
+.offer-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.offer-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.offer-card p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.offer-card button {
+  padding: 10px 20px;
+  background: #6c2bd9;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.offer-card button:hover {
+  background: #4b1ea8;
+}
+
+/* Why Us */
+.why-us {
+  background: #f3f0ff;
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.why-us h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.why-us ul {
+  list-style: none;
+  line-height: 2;
+  font-size: 18px;
+}
+
+/* CTA */
+.cta {
+  background: #6c2bd9;
+  color: #fff;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.cta button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background: #fff;
+  color: #6c2bd9;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta button:hover {
+  background: #eee;
+}
+.cta button a {
+  text-decoration: none;
+  color: #6c2bd9;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
