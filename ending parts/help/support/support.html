@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support - Alex Travel</title>
+    <link rel="stylesheet" href="support.css" />
+  </head>
+  <body>
+    <header class="support-header">
+      <h1>We’re Here to Help You</h1>
+      <p>
+        Reach out to our support team anytime — we’ll make sure your journey
+        goes smoothly.
+      </p>
+    </header>
+
+    <main>
+      <section class="support-form-section">
+        <form id="supportForm">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          />
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="issue">Issue Type</label>
+          <select id="issue" name="issue" required>
+            <option value="">-- Select an issue --</option>
+            <option value="booking">Booking Problem</option>
+            <option value="payment">Payment Issue</option>
+            <option value="refund">Refund Request</option>
+            <option value="general">General Inquiry</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Explain your issue..."
+            required
+          ></textarea>
+
+          <button type="submit" class="btn-submit">Submit Request</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Floating Chat Widget -->
+    <div class="chat-widget">
+      <div class="chat-header" id="chatToggle">💬 Chat with Us</div>
+      <div class="chat-box" id="chatBox">
+        <div class="chat-messages" id="chatMessages">
+          <div class="bot-msg">👋 Hello! How can we assist you today?</div>
+        </div>
+        <div class="chat-input">
+          <input
+            type="text"
+            id="chatInput"
+            placeholder="Type your message..."
+          />
+          <button id="sendBtn">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Alex Travel. All Rights Reserved.</p>
+    </footer>
+
+    <script src="support.js"></script>
+  </body>
+</html>

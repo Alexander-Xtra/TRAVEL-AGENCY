@@ -1,30 +1,77 @@
-body {
-  font-family: "Segoe UI", sans-serif;
+:root {
+  --purple: #7c3aed;
+  --muted: #6b7280;
+  --container: 1100px;
+}
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: #fafafa;
-  color: #444;
 }
-
-header {
-  background: #ff6600;
+body {
+  font-family: Inter, system-ui, Arial;
+  background: linear-gradient(180deg, #fff, #fbf8ff);
+  color: #111;
+}
+.hero {
+  background: linear-gradient(135deg, var(--purple), #5a21b6);
   color: #fff;
+  padding: 80px 20px;
   text-align: center;
-  padding: 2rem 1rem;
+  animation: fadeIn 1s ease;
+}
+.hero h1 {
+  font-size: 40px;
+}
+.content {
+  max-width: var(--container);
+  margin: 24px auto;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(20, 20, 40, 0.04);
+}
+h2 {
+  color: var(--purple);
+  margin-top: 18px;
+}
+ul {
+  margin-left: 18px;
+  margin-top: 8px;
+}
+a {
+  color: var(--purple);
+}
+.doc-actions {
+  margin-top: 18px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.06);
+  padding-top: 12px;
+  color: var(--muted);
+}
+.site-footer {
+  background: #0b0b12;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  margin-top: 18px;
 }
 
-main {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 1rem 1.5rem;
-  background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* small animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  color: #777;
+@media (max-width: 700px) {
+  .content {
+    padding: 16px;
+  }
+  .hero {
+    padding: 48px 14px;
+  }
 }

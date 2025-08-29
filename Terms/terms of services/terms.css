@@ -1,30 +1,99 @@
-body {
-  font-family: Verdana, sans-serif;
+:root {
+  --purple: #7c3aed;
+  --bg: #fff;
+  --muted: #6b7280;
+  --container: 1100px;
+}
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: #f2f2f2;
-  color: #222;
 }
-
-header {
-  background: #0077cc;
+body {
+  font-family: Inter, system-ui, Arial;
+  background: linear-gradient(180deg, #fff, #fbf8ff);
+  color: #111;
+}
+.hero {
+  background: linear-gradient(135deg, var(--purple), #5a21b6);
   color: #fff;
+  padding: 80px 20px;
   text-align: center;
-  padding: 2rem 1rem;
+  animation: heroIn 1.2s ease;
+}
+.hero-inner h1 {
+  font-size: 42px;
+  margin-bottom: 6px;
+}
+.hero-inner p {
+  opacity: 0.95;
+}
+.content {
+  max-width: var(--container);
+  margin: 24px auto;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(20, 20, 40, 0.04);
+  animation: cardUp 1s ease;
+}
+h2 {
+  color: var(--purple);
+  margin-top: 20px;
+}
+ul,
+ol {
+  margin-left: 18px;
+  margin-top: 8px;
+}
+a {
+  color: var(--purple);
+  text-decoration: none;
+}
+.doc-actions {
+  margin-top: 20px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.06);
+  padding-top: 12px;
+  color: var(--muted);
+}
+.site-footer {
+  background: #0b0b12;
+  color: #fff;
+  padding: 14px;
+  text-align: center;
+  margin-top: 22px;
 }
 
-main {
-  max-width: 850px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+/* animations */
+@keyframes heroIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes cardUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  color: #555;
+@media (max-width: 800px) {
+  .content {
+    padding: 18px;
+  }
+  .hero {
+    padding: 48px 14px;
+  }
+  .hero-inner h1 {
+    font-size: 28px;
+  }
 }

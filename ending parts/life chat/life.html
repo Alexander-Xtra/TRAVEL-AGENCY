@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Travel Agency — Live Chat</title>
+    <link rel="stylesheet" href="life.css" />
+  </head>
+  <body>
+    <div class="chat-app">
+      <header class="chat-header">
+        <div class="brand">
+          <div class="logo">✈️</div>
+          <div class="text">
+            <h1>Alex Travel — Live Support</h1>
+            <small
+              >We're here to help with bookings, destinations & prices</small
+            >
+          </div>
+        </div>
+        <div class="agent-status">
+          <div class="dot online"></div>
+          <div class="status-text">Agent online</div>
+        </div>
+      </header>
+
+      <main
+        class="chat-main"
+        id="chatMain"
+        role="log"
+        aria-live="polite"
+      ></main>
+
+      <aside class="chat-side">
+        <div class="quick-widgets">
+          <h3>Quick actions</h3>
+          <button class="quick" data-action="book">Book a flight</button>
+          <button class="quick" data-action="packages">View packages</button>
+          <button class="quick" data-action="destinations">
+            Top destinations
+          </button>
+          <button class="quick" data-action="agent">Talk to agent</button>
+        </div>
+
+        <div class="tips">
+          <h4>Pro tip</h4>
+          <p>
+            Type <code>book</code>, <code>price</code> or a destination like
+            <code>Paris</code> to get tailored replies.
+          </p>
+        </div>
+      </aside>
+      <form id="chatForm" class="chat-input" aria-label="Send message">
+        <input
+          id="msg"
+          autocomplete="off"
+          placeholder="Ask about bookings, prices, destinations..."
+        />
+        <button type="submit" aria-label="Send">Send</button>
+        <button id="clearChat" class="clear-btn">Clear Chat</button>
+      </form>
+      <div class="credit">© 2025 Alex Travel | Life chat</div>
+
+      <script src="life.js"></script>
+    </div>
+  </body>
+</html>

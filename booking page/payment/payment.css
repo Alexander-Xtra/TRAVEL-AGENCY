@@ -1,0 +1,151 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background: #6c2bd9;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav .nav-links a:hover,
+nav .nav-links .active {
+  color: #ffd700;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: url("../imgs/Secure-Your-Trip-Payment-with-Baboo.jpg") center/cover no-repeat;
+  color: #fff;
+  animation: fadeIn 2s ease;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Payment Section */
+.payment-section {
+  padding: 60px 20px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: -40px;
+  z-index: 10;
+  position: relative;
+}
+
+.payment-section h2 {
+  font-size: 28px;
+  color: #6c2bd9;
+  margin-bottom: 10px;
+}
+
+.payment-section p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+.payment-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.payment-section input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.payment-section input:focus {
+  border-color: #6c2bd9;
+  outline: none;
+  box-shadow: 0 0 8px rgba(108, 43, 217, 0.3);
+}
+
+.payment-section .row {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-section button {
+  padding: 15px;
+  background: #6c2bd9;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.payment-section button:hover {
+  background: #4b1ea8;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+  margin-top: 40px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,31 +1,76 @@
-body {
-  font-family: Georgia, serif;
+:root {
+  --purple: #7c3aed;
+  --muted: #6b7280;
+  --container: 1100px;
+}
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: #fefefe;
+}
+body {
+  font-family: Inter, system-ui, Arial;
+  background: linear-gradient(180deg, #fff, #fbf8ff);
   color: #111;
 }
-
-header {
-  background: #28a745;
+.hero {
+  background: linear-gradient(135deg, var(--purple), #5a21b6);
   color: #fff;
+  padding: 80px 20px;
   text-align: center;
-  padding: 2rem 1rem;
+  animation: fadeIn 1.1s ease;
 }
-
-main {
-  max-width: 750px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background: #fff;
-  border-left: 5px solid #28a745;
-  border-radius: 5px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+.hero h1 {
+  font-size: 40px;
 }
-
-footer {
+.content {
+  max-width: var(--container);
+  margin: 24px auto;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(20, 20, 40, 0.06);
+}
+h2 {
+  color: var(--purple);
+  margin-top: 16px;
+}
+ol,
+ul {
+  margin-left: 18px;
+  margin-top: 8px;
+}
+a {
+  color: var(--purple);
+}
+.doc-actions {
+  margin-top: 20px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.06);
+  padding-top: 12px;
+  color: var(--muted);
+}
+.site-footer {
+  background: #0b0b12;
+  color: #fff;
+  padding: 12px;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  color: #333;
+  margin-top: 18px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 700px) {
+  .content {
+    padding: 18px;
+  }
+  .hero {
+    padding: 48px 14px;
+  }
 }

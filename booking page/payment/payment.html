@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment - Alex Travel</title>
+    <link rel="stylesheet" href="./payment.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">Alex Travel</div>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/navv option/services/services.html">Services</a></li>
+        <li><a href="/navv option/tour/tour1.html">Tours</a></li>
+        <li><a href="/navv option/offer-Nav/offer4.html">Offers</a></li>
+        <li><a href="/navv option/About-Nav/about2.html">About</a></li>
+        <li><a href="/contact us/cont.html">Contact</a></li>
+        <li><a href="/booking page/book.html">Book Trip</a></li>
+        <li><a href="./payment.html" class="active">Payment</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+      <h1>Secure Your Trip Payment</h1>
+      <p>Fast • Safe • Secure 💳✨</p>
+    </header>
+
+    <!-- Payment Section -->
+    <section class="payment-section">
+      <h2>Complete Your Payment</h2>
+      <p>Please enter your payment details below</p>
+
+      <form id="paymentForm">
+        <input
+          type="text"
+          name="cardName"
+          placeholder="Cardholder Name"
+          required
+        />
+        <input
+          type="text"
+          name="cardNumber"
+          placeholder="Card Number"
+          maxlength="16"
+          required
+        />
+
+        <div class="row">
+          <input
+            type="text"
+            name="expiry"
+            placeholder="MM/YY"
+            maxlength="5"
+            required
+          />
+          <input
+            type="text"
+            name="cvv"
+            placeholder="CVV"
+            maxlength="3"
+            required
+          />
+        </div>
+
+        <button type="submit">Pay Now</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Alex Travel. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const paymentForm = document.getElementById("paymentForm");
+      paymentForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert(
+          "✅ Payment Successful! Thank you for booking with Alex Travel 🌍✈"
+        );
+        paymentForm.reset();
+        window.location.href = "/index.html"; // Redirect back home
+      });
+    </script>
+  </body>
+</html>

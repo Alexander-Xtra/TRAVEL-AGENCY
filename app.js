@@ -94,7 +94,7 @@ function logout() {
   localStorage.clear();
   alert("You have been logged out!");
 
-  window.location.href = "../sing-up page/signup.html";
+  window.location.href = "./sign-up page/signup.html";
 }
 const find = document.querySelector(".find1");
 find.addEventListener("click", () => {
@@ -109,6 +109,6 @@ bbttn.addEventListener("click", () => {
   window.location.href = "./select/book trip/trip.html";
 });
 const enjoy = document.querySelector(".enjoy");
-enjoy.addEventListener("click", () => { 
+enjoy.addEventListener("click", () => {
   window.location.href = "./select/enjoy adventure/enjoy.html";
 });

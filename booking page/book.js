@@ -1,55 +1,34 @@
-document.querySelector("form").addEventListener("submit", function (e) {
+const form = document.getElementById("bookingForm");
+const messageBox = document.getElementById("messageBox");
+
+form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const departure = document.getElementById("departure").value.trim();
-  const destination = document.getElementById("destination").value.trim();
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const type = document.getElementById("type").value;
-  const adults = this.querySelector("input[type='number']").value;
-  const children = this.querySelectorAll("input[type='number']")[1].value;
-  const seats = this.querySelectorAll("input[type='number']")[2].value;
+  const name = form.name.value.trim();
+  const destination = form.destination.value.trim();
+  const people = form.people.value;
 
-  // Validation
-  if (!departure) return showPopup("Please enter your departure location.");
-  if (!destination) return showPopup("Please enter your destination.");
-  if (!name) return showPopup("Please enter your name.");
-  if (!email || !email.includes("@"))
-    return showPopup("Please enter a valid email.");
-  if (!phone) return showPopup("Please enter your phone number.");
-  if (!type) return showPopup("Please select a booking type.");
+  if (!name || !destination || !people) {
+    showMessage("Please fill in all required fields.", "error");
+    return;
+  }
 
-  // Show booking details in popup
-  const popup = document.getElementById("popup");
-  const popupMessage = document.getElementById("popup-message");
+  showMessage(
+    `🎉 Thank you, <b>${name}</b>! Your trip to <b>${destination}</b> for <b>${people}</b> people has been successfully booked!`,
+    "success"
+  );
 
-  popupMessage.innerHTML = `
-    <strong>Name:</strong> ${name} <br>
-    <strong>Email:</strong> ${email} <br>
-    <strong>Phone:</strong> ${phone} <br>
-    <strong>Departure:</strong> ${departure} <br>
-    <strong>Destination:</strong> ${destination} <br>
-    <strong>Booking For:</strong> ${type} <br>
-    <strong>Adults:</strong> ${adults} <br>
-    <strong>Children:</strong> ${children} <br>
-    <strong>Seats:</strong> ${seats}
-  `;
-
-  popup.style.display = "flex"; // show popup
-
-  this.reset();
+  form.reset();
 });
 
-// Function to reuse error popup
-function showPopup(message) {
-  const popup = document.getElementById("popup");
-  const popupMessage = document.getElementById("popup-message");
-  popupMessage.innerHTML = `<span style="color:red">${message}</span>`;
-  popup.style.display = "flex";
+// Function to show message
+function showMessage(text, type) {
+  messageBox.innerHTML = text;
+  messageBox.className = type; // apply success/error class
+  messageBox.style.display = "block";
+
+  // Auto-hide after 5 seconds
+  setTimeout(() => {
+    window.location.href = "./payment/payment.html";
+  }, 5000);
 }
-
-document.getElementById("close-popup").addEventListener("click", () => {
-  document.getElementById("popup").style.display = "none";
-  window.location.href = "../index.html";
-});
