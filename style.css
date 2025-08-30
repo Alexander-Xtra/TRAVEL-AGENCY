@@ -737,6 +737,124 @@ nav {
 }
 
 @media (max-width: 600px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+  }
+  nav .logo-img {
+    width: 40%;
+    border-radius: 20px;
+  }
+  .logout-btn {
+    width: 20%;
+    height: 40px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .head h1 {
+    position: relative;
+    bottom: 80px;
+  }
+  .info2 {
+    position: relative;
+    bottom: 280px;
+    width: 75%;
+  }
+  .like {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .outer {
+    width: 80%;
+    margin-left: 20px;
+  }
+  .ott {
+    margin-left: 100px;
+  }
+  .card {
+    font-size: 12px;
+  }
+  .magic {
+    height: auto;
+  }
+  .magic-head {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .magic-img {
+    height: 300px;
+  }
+  .magic-space {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .like1 {
+    width: 40%;
+    height: auto;
+    padding: 10px 0;
+  }
+  .slect {
+    flex-direction: column;
+    height: auto;
+  }
+  .slect-img {
+    width: 90%;
+    height: auto;
+  }
+  .slect-option {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .opt-cont {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .opt-i {
+    width: 15%;
+    height: 50px;
+  }
+  .opt-info {
+    width: 75%;
+  }
+  .final {
+    height: auto;
+    padding: 20px 0;
+  }
+  
+  .final h1 {
+    font-size: 30px;
+    width: 80%;
+  }
+  .final p {
+    font-size:12px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .fin-eml {
+    width: 80%;
+    height: 40px;
+  }
+  .fin-eml input {
+    height: 30px;
+  }
+  .logo {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
   .logo ul {
     display: none;
     flex-direction: column;
@@ -744,6 +862,7 @@ nav {
     position: absolute;
     top: 65px;
     right: 0;
+    left: 200px;
     width: 200px;
     text-align: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
